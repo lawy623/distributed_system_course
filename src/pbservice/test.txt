@@ -1,0 +1,1704 @@
+2018/10/12 18:09:08 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:09:08 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Single primary, no backup ...
+  ... Passed
+Test: Add a backup ...
+  ... Passed
+Test: Primary failure ...
+  ... Passed
+Test: Kill last server, new one should not be active ...
+  ... Passed
+2018/10/12 18:09:16 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:09:16 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: at-most-once Put; unreliable ...
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+  ... Passed
+2018/10/12 18:09:25 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:09:25 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Put() immediately after backup failure ...
+  ... Passed
+Test: Put() immediately after primary failure ...
+  ... Passed
+2018/10/12 18:09:32 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:09:32 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key ...
+  ... Passed
+2018/10/12 18:09:42 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:09:42 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key; unreliable ...
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+  ... Passed
+2018/10/12 18:09:53 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:09:53 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Repeated failures/restarts ...
+  ... Put/Gets done ... 
+  ... Passed
+2018/10/12 18:10:16 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:10:16 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Repeated failures/restarts; unreliable ...
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-rcu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: socket is not connected
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69805-rcu-2: write: broken pipe
+  ... Put/Gets done ... 
+  ... Passed
+2018/10/12 18:10:40 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:10:40 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Old primary does not serve Gets ...
+  ... Passed
+2018/10/12 18:10:49 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:10:49 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Partitioned old primary does not complete Gets ...
+  ... Passed
+PASS
+ok  	pbservice	112.212s
+2018/10/12 18:11:01 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:11:01 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Single primary, no backup ...
+  ... Passed
+Test: Add a backup ...
+  ... Passed
+Test: Primary failure ...
+  ... Passed
+Test: Kill last server, new one should not be active ...
+  ... Passed
+2018/10/12 18:11:09 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:11:09 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: at-most-once Put; unreliable ...
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+  ... Passed
+2018/10/12 18:11:17 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:11:17 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Put() immediately after backup failure ...
+  ... Passed
+Test: Put() immediately after primary failure ...
+  ... Passed
+2018/10/12 18:11:25 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:11:25 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key ...
+  ... Passed
+2018/10/12 18:11:35 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:11:35 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key; unreliable ...
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: socket is not connected
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: socket is not connected
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: socket is not connected
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+  ... Passed
+2018/10/12 18:11:45 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:11:45 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Repeated failures/restarts ...
+  ... Put/Gets done ... 
+  ... Passed
+2018/10/12 18:12:09 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:12:09 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Repeated failures/restarts; unreliable ...
+write unix ->/var/tmp/824-501/pb-69841-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69841-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+  ... Put/Gets done ... 
+  ... Passed
+2018/10/12 18:12:33 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:12:33 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Old primary does not serve Gets ...
+  ... Passed
+2018/10/12 18:12:42 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:12:42 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Partitioned old primary does not complete Gets ...
+  ... Passed
+PASS
+ok  	pbservice	112.381s
+2018/10/12 18:12:54 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:12:54 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Single primary, no backup ...
+  ... Passed
+Test: Add a backup ...
+  ... Passed
+Test: Primary failure ...
+  ... Passed
+Test: Kill last server, new one should not be active ...
+  ... Passed
+2018/10/12 18:13:02 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:13:02 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: at-most-once Put; unreliable ...
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+  ... Passed
+2018/10/12 18:13:10 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:13:10 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Put() immediately after backup failure ...
+  ... Passed
+Test: Put() immediately after primary failure ...
+  ... Passed
+2018/10/12 18:13:18 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:13:18 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key ...
+  ... Passed
+2018/10/12 18:13:28 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:13:28 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key; unreliable ...
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: socket is not connected
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-csu-2: write: broken pipe
+  ... Passed
+2018/10/12 18:13:38 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:13:38 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Repeated failures/restarts ...
+  ... Put/Gets done ... 
+  ... Passed
+2018/10/12 18:14:02 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:14:02 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Repeated failures/restarts; unreliable ...
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: socket is not connected
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: socket is not connected
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69874-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+  ... Put/Gets done ... 
+  ... Passed
+2018/10/12 18:14:26 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:14:26 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Old primary does not serve Gets ...
+  ... Passed
+2018/10/12 18:14:35 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:14:35 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Partitioned old primary does not complete Gets ...
+  ... Passed
+PASS
+ok  	pbservice	112.271s
+2018/10/12 18:14:47 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:14:47 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Single primary, no backup ...
+  ... Passed
+Test: Add a backup ...
+  ... Passed
+Test: Primary failure ...
+  ... Passed
+Test: Kill last server, new one should not be active ...
+  ... Passed
+2018/10/12 18:14:55 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:14:55 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: at-most-once Put; unreliable ...
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: socket is not connected
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+  ... Passed
+2018/10/12 18:15:03 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:15:03 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Put() immediately after backup failure ...
+  ... Passed
+Test: Put() immediately after primary failure ...
+  ... Passed
+2018/10/12 18:15:11 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:15:11 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key ...
+  ... Passed
+2018/10/12 18:15:21 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:15:21 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key; unreliable ...
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: socket is not connected
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: socket is not connected
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69908-csu-1: write: socket is not connected
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+signal: interrupt
+FAIL	pbservice	41.803s
+2018/10/12 18:15:29 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:15:29 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Single primary, no backup ...
+  ... Passed
+Test: Add a backup ...
+  ... Passed
+Test: Primary failure ...
+  ... Passed
+Test: Kill last server, new one should not be active ...
+  ... Passed
+2018/10/12 18:15:37 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:15:37 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: at-most-once Put; unreliable ...
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+  ... Passed
+2018/10/12 18:15:46 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:15:46 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Put() immediately after backup failure ...
+  ... Passed
+Test: Put() immediately after primary failure ...
+  ... Passed
+2018/10/12 18:15:53 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:15:53 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key ...
+  ... Passed
+2018/10/12 18:16:03 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:16:03 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Concurrent Put()s to the same key; unreliable ...
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-1: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: socket is not connected
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-csu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+  ... Passed
+2018/10/12 18:16:14 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:16:14 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Repeated failures/restarts ...
+  ... Put/Gets done ... 
+  ... Passed
+2018/10/12 18:16:38 rpc.Register: method "Kill" has 1 input parameters; needs exactly three
+2018/10/12 18:16:38 rpc.Register: reply type of method "ViewChange" is not a pointer: "string"
+Test: Repeated failures/restarts; unreliable ...
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-3: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-rcu-3: write: broken pipe
+write unix ->/var/tmp/824-501/pb-69935-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-2: write: socket is not connected
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-3: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-2: write: broken pipe
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-2: write: broken pipe
+unexpected EOF
+unexpected EOF
+unexpected EOF
+write unix ->/var/tmp/824-501/pb-69935-rcu-2: write: broken pipe
+unexpected EOF
+signal: interrupt
+FAIL	pbservice	85.580s
